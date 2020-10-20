@@ -54,31 +54,45 @@ However this is a trusted source that we have verified, if you want to check out
 
 To proceed to the next screen, you need to press the ENTER key.
 
+![Screenshot (44)](https://user-images.githubusercontent.com/67831210/96567248-31a9ff00-12e4-11eb-84fa-ba1c0e254d87.png)
+
 4. The next screen explains that you will need to set up a static IP address for your VPN. This is so that when the Raspberry Pi is restarted, it will try and use the same IP address. If the local IP changes, you could potentially lose access to your VPN.
+
+![Screenshot (45)](https://user-images.githubusercontent.com/67831210/96567268-35d61c80-12e4-11eb-8cd6-b9ca2869efd2.png)
 
 5. You will now be asked if you are using a DHCP reservation on your router.
 
 If you don’t know what DHCP reservation is or how to use it, select <No> to continue.
+    
+![Screenshot (46)](https://user-images.githubusercontent.com/67831210/96567290-3bcbfd80-12e4-11eb-9d79-90a9346bfa6b.png)
   
 6. Here, select <Yes> to set the current IP address and gateway as static.
 
 If you are unhappy with the IP address displayed on this page, then select <No>.
+    
+![Screenshot (47)](https://user-images.githubusercontent.com/67831210/96567307-3f5f8480-12e4-11eb-8f82-49898e9d7ccb.png)    
   
 7. This screen warns you that there is a chance your router will assign the IP address to another device.
 
 You can use DHCP reservations to avoid this. However, most routers are smart enough to prevent the problem.
 
 To continue, select <Ok> and press the ENTER key.
+    
+![Screenshot (48)](https://user-images.githubusercontent.com/67831210/96567302-3ec6ee00-12e4-11eb-8945-fbb24e2526a5.png)    
   
 8. This screen explains that we will need to set a user that will own the OpenVPN configuration files.
 
 Select <Ok> and press ENTER to go to the next screen.
+    
+![Screenshot (49)](https://user-images.githubusercontent.com/67831210/96567310-3ff81b00-12e4-11eb-8767-ee131be61cf0.png)    
   
 9. We will be presented with a list of users who can own our Raspberry Pi’s VPN config files.
 
 In this tutorial, we will be making use of the pi user. If you want to use another user, use the ARROW keys and SPACEBAR to select it.
 
 Once you are happy with your selection, press the ENTER key to continue.
+
+![Screenshot (50)](https://user-images.githubusercontent.com/67831210/96567318-42f30b80-12e4-11eb-9115-8a809a67209c.png)
 
 10. You will now be asked to select what type of VPN you want to install on your Raspberry Pi.
 The two choices are WireGuard and OpenVPN.
@@ -87,22 +101,30 @@ For this guide, we will be using OpenVPN on our Raspberry Pi (1.). Use the ARROW
 
 Once you have OpenVPN selected, press the ENTER key to continue (2.).
 
+![Screenshot (51)](https://user-images.githubusercontent.com/67831210/96567357-4be3dd00-12e4-11eb-8554-205e7a086c38.png)
+
 11. You can now decide whether you want to customize the installation of OpenVPN on your Raspberry Pi.
 
 The setting chosen by the PiVPN team is best for most users. However, you can modify these if you like.
 For our guide, we are going to stick with the default settings.
 
 To continue, select <No>, then press the ENTER key.
+    
+![Screenshot (52)](https://user-images.githubusercontent.com/67831210/96567369-500ffa80-12e4-11eb-90b3-82b943a70aab.png)    
   
 12. Now we will be selecting the port that OpenVPN will operate through.
 
 For this tutorial, we are going to stick with the default port of 1194. You should only change the port if you have a good reason to.
 
 Once you have defined the port, select <Ok> and press ENTER.
+    
+![Screenshot (53)](https://user-images.githubusercontent.com/67831210/96567371-51412780-12e4-11eb-9308-e4d89e54e5f0.png)    
   
 13. You will be asked to confirm the port that you set for your OpenVPN installation
 
 If you are happy with the port you have chosen, then select <Yes> to continue.  
+    
+![Screenshot (54)](https://user-images.githubusercontent.com/67831210/96567379-530aeb00-12e4-11eb-9f8e-b4dec104bdd8.png)    
   
 14. The next step is to select a DNS provider. A DNS provider is what resolves a URL like https://pimylifeup.com into an IP address.
 
@@ -112,7 +134,9 @@ To select Cloudflare or another DNS provider, you will need to use the ARROW key
 
 Once you are hovering over the DNS provider you want, press the SPACEBAR key to select it.
 
-Once you are happy that you have made the right choice, you can press the ENTER key to proceed.  
+Once you are happy that you have made the right choice, you can press the ENTER key to proceed. 
+
+![Screenshot (55)](https://user-images.githubusercontent.com/67831210/96567386-556d4500-12e4-11eb-8376-fdfd80424ee8.png)
 
 15. You will need to decide whether you want to make use of your public IP Address or a DNS name.
 
@@ -122,11 +146,15 @@ As we are using a static public IP address, we will stick with using our public 
 
 You can change between options by using the ARROW keys. Once you have the one you want, press the SPACEBAR key to select it.
 
+![Screenshot (56)](https://user-images.githubusercontent.com/67831210/96567390-569e7200-12e4-11eb-8298-00fce2dd564d.png)
+
 16. This next step is just explaining to you that the PiVPN script is about to generate both the HMAC key and the server key.
 
 These keys are part of what makes up the encryption part of your Raspberry Pi’s VPN.
 
 Press the ENTER key to continue with the guide.
+
+![Screenshot (57)](https://user-images.githubusercontent.com/67831210/96567395-57cf9f00-12e4-11eb-8efd-ace1e403f6f2.png)
 
 17. Now you will be presented with a simple explanation of unattended-upgrades.
 
@@ -134,21 +162,29 @@ This feature makes the Raspberry Pi OS automatically download security package u
 
 Press the ENTER key to proceed to the actual configuration page for this setting.
 
+![Screenshot (58)](https://user-images.githubusercontent.com/67831210/96567398-5900cc00-12e4-11eb-8816-44e1cfed55a9.png)
+
 18. On this screen, we highly recommend that you enable unattended-upgrades by selecting <Yes>. Enabling this will ensure your Raspberry Pi should always have the latest packages.
 
 Leaving this feature switched off can pose a significant security risk to your Raspberry Pi’s VPN and potentially your home network.
 
 Once done, press the ENTER key to confirm your settings.
 
+![Screenshot (59)](https://user-images.githubusercontent.com/67831210/96567401-59996280-12e4-11eb-9f36-da4ddcc227d7.png)
+
 29. You have now completed the installation of OpenVPN on your Raspberry Pi.
 
 While there are still a couple more things you will need to complete to allow connections, you are now about 90% through this setup guide.
+
+![Screenshot (60)](https://user-images.githubusercontent.com/67831210/96567508-7b92e500-12e4-11eb-98aa-96cdc1467419.png)
 
 20. We will now be greeted by a screen asking for us to reboot the Raspberry Pi.
 
 Select the <Yes> option to the following two screens by pressing the ENTER key.
 
 Rebooting your Raspberry Pi after installing OpenVPN is a crucial step.
+
+![Screenshot (61)](https://user-images.githubusercontent.com/67831210/96567453-6d44c900-12e4-11eb-8c28-d6d22a4815c1.png)
 
 # Setting up your first OpenVPN User
 1. Normally setting up a user for OpenVPN would be a painful process as you would have to generate the individual certificates for the user, luckily we can do this in one single command thanks to PiVPN.
