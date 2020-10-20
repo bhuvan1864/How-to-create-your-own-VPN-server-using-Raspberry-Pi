@@ -7,6 +7,11 @@ The great thing about all of these projects is that tutorials can be found onlin
 
 ![raspberrypi-05-1](https://user-images.githubusercontent.com/67831210/96544384-1a5b1980-12c4-11eb-8f81-5f8b50ba968a.png)
 
+![20201020_160124](https://user-images.githubusercontent.com/67831210/96575050-e268cc00-12ed-11eb-8288-1b849a035c2b.jpg)
+Beautiful in'it?
+
+
+
 
 First things first...
 
