@@ -1,7 +1,7 @@
 # How-to-create-your-own-VPN-server-using-Raspberry-Pi
 Virtual Private Network Server can be set up on the Raspberry Pi to provide anonymity and encryption among your data and browsing which safes guard your IP address, protects you from MiTM attacks and hides you from prying eyes. Easy to set up and worth protecting yourself from open internet connections, there are 100's of VPN providers on the market and really cheap for there services, choose one that supports OpenVPN to set up on the Raspberry Pi.
 
-A good way to extend on the VPN Server is to turn the Pi into a TOR/VPN Router which is portable and can be plugged into anywhere, adding extra security when you're out in public. TOR is one of the easiest ways to browse the internet anonymously, but it can be very slow, some users switch between TOR and VPN depending on what tasks they are doing.
+A good way to extend on the VPN Server is to turn the Pi into a TOR/VPN Router which is portable and can be plugged into anywhere, adding extra security when you're out in public. TOR is one of the easiest ways to browse the internet anonymously, but it can be very slow, some users switch beten TOR and VPN depending on what tasks they are doing.
 
 The great thing about all of these projects is that tutorials can be found online with step by step instructions and videos covering the installation and configuration of these projects. These are my favorite five projects that you can do with a Raspberry Pi, but there are many more projects our there and new ones emerging constantly! 
 
@@ -42,7 +42,7 @@ Before we get started, we should first change the password of the default pi use
 
     passwd
     
-2.  With the password changed we can begin the process of setting up our VPN server on the Raspberry Pi. We can begin this process by running the command below, this command downloads the install script from PiVPN’s GitHub page and runs it. Here's the link for the resource https://github.com/pivpn/pivpn
+2. With the password changed we can begin the process of setting up our VPN server on the Raspberry Pi. We can begin this process by running the command below, this command downloads the install script from PiVPN’s GitHub page and runs it. Here's the link for the resource https://github.com/pivpn/pivpn
 
 Normally running a script straight from a URL is a poor idea, as it can be an easy way for someone to gain access to your Raspberry Pi and do some serious damage.
 
@@ -294,7 +294,11 @@ This command will utilize the pivpn software to uninstall the VPN tunnel.
 
 I hope that this tutorial has shown you how to set up a Raspberry Pi VPN Server and that you haven’t run into any issues. It’s certainly a great project for anyone who wishes to set up a cheap always-on VPN network.
 
-If you have some feedback, tips or have come across any issues that you would like to share, then please don’t hesitate to leave a comment below.
+If you have some feedback, tips or have come across any issues that you would like to share, then please don’t hesitate to contact me...
+
+until next time...
+
+-B
 
 
 
