@@ -20,7 +20,7 @@ For starters, make sure you actually do need a VPN before you start setting this
 If you do intend on using a VPN make sure all the computers on your home network are secure, and that you aren’t sharing anything within your local network that you wouldn’t want someone gaining access to.
 
 # Preparing your VPN Server’s IP Address
-t’s important to decide whether you are going to make use of a static IP address or a dynamic IP address, setting up a VPN for a static IP address is a rather simple process and requires no extra work.
+It’s important to decide whether you are going to make use of a static IP address or a dynamic IP address, setting up a VPN for a static IP address is a rather simple process and requires no extra work.
 
 However, if you want to utilize a dynamic IP address, you must make use of a dynamic DNS service.
 
