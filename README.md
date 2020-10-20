@@ -5,6 +5,9 @@ A good way to extend on the VPN Server is to turn the Pi into a TOR/VPN Router w
 
 The great thing about all of these projects is that tutorials can be found online with step by step instructions and videos covering the installation and configuration of these projects. These are my favorite five projects that you can do with a Raspberry Pi, but there are many more projects our there and new ones emerging constantly! 
 
+![raspberrypi-05-1](https://user-images.githubusercontent.com/67831210/96544384-1a5b1980-12c4-11eb-8f81-5f8b50ba968a.png)
+
+
 First things first...
 
 # What you'll need:
