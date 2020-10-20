@@ -199,6 +199,8 @@ It will also ask you to set a password for the client, and it is important to ma
 
 So, if someone can guess the password easily, it severely reduces the security of your VPN.
 
+![Screenshot (62)](https://user-images.githubusercontent.com/67831210/96571044-b0a13680-12e8-11eb-9795-fb60b0badec8.png)
+
 Once you press enter to these, the PiVPN script will tell Easy-RSA to generate the 2048-bit RSA private key for the client, and then store the file into /home/pi/ovpns.
 
 /home/pi/ovpns is the folder we will have to gain access to in the next few steps so we can copy the generated file to our devices.
@@ -217,15 +219,21 @@ If you don’t have you Pi’s local address use the command hostname -I in the 
 
 Once you have entered your IP address, Username and Password, press the quick-connect button.
 
+![Screenshot (63)](https://user-images.githubusercontent.com/67831210/96571049-b26afa00-12e8-11eb-9c1a-565e78db2fdd.png)
+
 3. Once you have successfully logged in, we need to look for the ovpns folder, as this is where the file we need will be located.
 
 Once you have found the folder, double-click on it.
+
+![Screenshot (64)](https://user-images.githubusercontent.com/67831210/96571059-b4cd5400-12e8-11eb-9bbf-77f4c488b09d.png)
 
 4. Now, all we need to do is drag the .ovpn file you want to somewhere safe on your computer. This file contains the data that we will need to connect to the VPN so keep this file safe.
 
 It is also the only way someone could potentially gain access to your VPN, so keeping the passphrase and the file secure is incredibly important.
 
 If someone gains access to these, they could potentially cause some harm to your network.
+
+![Screenshot (65)](https://user-images.githubusercontent.com/67831210/96571067-b9920800-12e8-11eb-80c0-60b99b776fce.png)
 
 5. Now we have the .opvn file on our device we can use this to make a connection to our VPN.
 
@@ -237,21 +245,31 @@ The client we are going to use is the official OpenVPN client, and you can obtai
 
 Download and install this client, on its first run it will automatically minimize to the taskbar, right click on the icon, then select “Import file…”
 
+![Screenshot (66)](https://user-images.githubusercontent.com/67831210/96571081-beef5280-12e8-11eb-88f0-b910d386be10.png)
+
 6. You will be presented with a file explorer screen, in here go to where you saved the .opvn file from earlier.
 
 Once you have found it, double-click the file to import into the OpenVPN client.
+
+![Screenshot (67)](https://user-images.githubusercontent.com/67831210/96571086-c282d980-12e8-11eb-9b39-1cd43657a593.png)
 
 7. You should now be presented with a dialog telling you the file has been successfully imported into OpenVPN.
 
 Just click the “OK” button to proceed.
 
+![Screenshot (68)](https://user-images.githubusercontent.com/67831210/96571092-c3b40680-12e8-11eb-9534-1ebd3d7a2d3c.png)
+
 8. Now right-click the OpenVPN client icon in the taskbar again, this time click the “Connect” button.
+
+![Screenshot (69)](https://user-images.githubusercontent.com/67831210/96571116-cd3d6e80-12e8-11eb-829b-1d372dd8163b.png)
 
 9. Now the OpenVPN client will attempt to read the data located in the .opvn file.
 
 Since we have a passphrase set, it will now ask for you to enter the passphrase you set earlier on in this tutorial.
 
 Once you are certain you have entered the correct passphrase, click the “OK” Button.
+
+![Screenshot (70)](https://user-images.githubusercontent.com/67831210/96571128-d0385f00-12e8-11eb-9a15-f769340e23fa.png)
 
 10. The OpenVPN client will now attempt to connect to your Raspberry Pi’s VPN server. If the OpenVPN icon turns to a solid green, then it means that you have successfully connected into your VPN.
 
